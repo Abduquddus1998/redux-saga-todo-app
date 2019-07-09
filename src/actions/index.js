@@ -1,7 +1,7 @@
-import {ADD_TODO} from "./actionTypes";
+import {ADD_TODO,LOAD_TODO_LIST,RENDER_TODO_LIST} from "./actionTypes";
 
 
-export function addTodo(title) {
+export default function addTodo(title) {
     return {
         type:ADD_TODO,
         toDoItem: {
@@ -10,4 +10,10 @@ export function addTodo(title) {
         }
     };
 
+}
+
+export function loadTodoList() {
+    return {
+        type: LOAD_TODO_LIST
+    }
 }
